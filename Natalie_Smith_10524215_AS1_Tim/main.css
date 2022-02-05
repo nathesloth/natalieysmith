@@ -1,0 +1,489 @@
+/*--------------------------------------------------------------------*/
+/*[MASTER STYLE SHEET]
+
+Project: DYB124 Assignment 1
+Author: Natalie Smith
+ID: n10524215
+Tutor: Tim
+
+----------------------------------------------------------------------*/
+/*[LAYOUT]
+
+* body
+    + header
+        - navigation <nav>
+    + main
+        - section
+            - article
+                - figure  
+    + footer
+
+NOTE* some of these may differ depending on the content
+----------------------------------------------------------------------*/
+/*#[COLOURS]
+
+# Black (text and body background): #000000
+# White (text): #ffffff
+# Greenish Blue (accent colour, buttons): #387780
+
+----------------------------------------------------------------------*/
+
+/*[Embed imported sources]*/
+
+
+/*[FONTS]
+
+* Font: Italiana
+* Used for: Logo, Homepage Heading Class and addtional Headings*/
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+/*Font: Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*Font: Raleway - Weight: 800*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+
+/*In addition, Helvetica is used in the Navigation Bar*/
+
+
+/*---------------------------------------------------------------------*/
+/* General CSS for Whole Site */
+* {
+    color: #ffffff;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+/* General Font Settings */
+/* Font Families*/
+h1,
+.logo {
+    font-family: 'Italiana', sans-serif;
+    font-weight: 100;
+}
+
+p,
+h2,
+ul,
+em,
+figcaption,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sneakpeek p,
+.sneakpeek h1,
+.sneakpeek em,
+.sneakpeek,
+footer ul li,
+footer ul li a,
+footer li,
+footer p {
+    color: #000000;
+}
+
+
+p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+h2 {
+    letter-spacing: 0.1em;
+    border-bottom: 0.5px solid #ffffff;
+    padding-bottom: 1.3em;
+    margin-bottom: 1.5em;
+    font-weight: 100;
+    font-size: 1.9rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 0.35em;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+}
+
+h5 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h6 {
+    text-align: center;
+    opacity: 50%;
+    letter-spacing: 0.7em;
+}
+
+h7 {
+    float: right;
+    opacity: 50%;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+em {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+figcaption,
+caption {
+    font-size: 0.7rem;
+    font-style: oblique;
+}
+
+
+h5,
+.sneakpeek-box div #gucci h5,
+.sneakpeek-box div #jewellery h5,
+.sneakpeek-box div #game-design h5,
+a {
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------*/
+/*Navigation Bar CSS*/
+nav {
+    top: 0;
+    overflow: auto;
+    right: 0;
+    left: 0;
+    margin: 3%;
+    line-height: 50px;
+}
+
+nav ul {
+    overflow: auto;
+    float: left;
+    font-size: 1em;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+    font-family: 'Helvetica', sans-serif;
+}
+
+nav a {
+    float: left;
+    display: inline-block;
+    margin: 20px;
+}
+
+.logo {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.active {
+    text-decoration: underline #ffffff;
+    opacity: 75%;
+}
+
+/*---------------------------------------------------------------------*/
+/**Footer CSS**/
+/*The following is specifically for general links*/
+footer {
+    background-color: #ffffff;
+    bottom: 0;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+footer ul {
+    display: block;
+    margin: 8%;
+}
+
+footer ul li {
+    margin-right: 9%;
+}
+
+footer p {
+    margin-left: 10%;
+    line-height: 1.2em;
+    display: block;
+    vertical-align: middle;
+}
+
+/*This refers to the social media icon navigation*/
+.footer-socials li img,
+.footer-socials li a {
+    height: 2.5em;
+    width: 2.5em;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-socials:hover {
+    cursor: pointer;
+}
+
+.footer-socials:active {
+    opacity: 100%;
+}
+
+/*---------------------------------------------------------------------*/
+/***Additional Global/Universal Styles***/
+/* Sections Across All Pages */
+section {
+    margin: 25% 8% 25% 8%;
+}
+
+
+/* Universal Heading Style */
+/*i.e. this refers to the introduction 'hero' images on the contact
+and works pages*/
+
+.heading {
+    margin: 7%;
+    position: relative;
+}
+
+.heading h1 {
+    font-size: 4em;
+    line-height: 0.85em;
+}
+
+.heading img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*Universal List Settings*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: block;
+}
+
+.special-text {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+/* Styling for Figure related semantic tags*/
+
+figure {
+    border: 1px solid #ffffff;
+    padding: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    margin-bottom: 2%;
+    position: relative;
+    align-content: center;
+}
+
+figcaption {
+    text-align: right;
+}
+
+img {
+    filter: grayscale(0.2);
+}
+
+/* Style for Buttons/Boxes*/
+
+
+.box-button,
+.tmi-box {
+    font-size: 1.2rem;
+    padding: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box-button {
+    background-color: #387790;
+    letter-spacing: 0rem;
+}
+
+.box-button:hover {
+    background-color: #387790;
+}
+
+.box-button p {
+    color: #ffffff;
+    line-height: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+.tmi-box {
+    border: 1px solid #ffffff;
+}
+
+.tmi-box p {
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+/*---------------------------------------------------------------------*/
+/*Specific Styles for Pages*/
+
+/* Home page */
+
+#intro {
+    margin: 8%;
+    margin-bottom: 0;
+    height: 50vh;
+    position: relative;
+    overflow: visible;
+}
+
+#intro h1 {
+    font-weight: 100;
+    font-size: 6em;
+    line-height: 0.85em;
+}
+
+#intro img {
+    width: 80%;
+    margin: 0;
+    margin-top: -53.5%;
+    margin-right: 3.5%;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(0.6);
+}
+
+.first-section-home {
+    margin: 90% 10% 25% 10%;
+}
+
+
+/*Home Page Project Link Styles*/
+
+.sneakpeek {
+    background-color: #387790;
+    padding-bottom: 10%;
+}
+
+.sneakpeek p,
+.sneakpeek em {
+    padding: 2% 5% 2% 5%;
+    color: white;
+}
+
+.sneakpeek-box div p {
+    font-size: 0.8rem;
+}
+
+.sneakpeek-box {
+    margin-top: 15%;
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+.sneakpeek-box div #gucci,
+.sneakpeek-box div #jewellery,
+.sneakpeek-box div #game-design {
+    background-size: cover;
+}
+
+
+.sneakpeek-box div #gucci {
+    background-image: url(sources/gucci1.jpg);
+}
+
+
+.sneakpeek-box div #jewellery {
+    background-image: url(sources/jewelry2.jpg);
+}
+
+.sneakpeek-box div #game-design {
+    background-image: url(sources/game-design-1.jpg);
+}
+
+.sneakpeek-box div #gucci h5,
+.sneakpeek-box div #jewellery h5,
+.sneakpeek-box div #game-design h5 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.4));
+    padding: 10%;
+    margin: 0;
+    width: auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+/*---------------------------------------------------------------------*/
+/*Contact Page related styles*/
+
+/*For the Quote within the TMI Section*/
+#quote-author {
+    font-style: oblique;
+}
+
+/*For the Operating Times list*/
+#operating-times li {
+    font-weight: bolder;
+    display: block;
+    width: 95%;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+#operating-times li .times {
+    font-weight: lighter;
+    float: right;
+    text-align: right;
+}
+
+
+
+
+/*---------------------------------------------------------------------*/
+/*Work Page Related Styles*/
+.work-section {
+    margin-bottom: 30%;
+}
+
+.work-section figure {
+    margin: 0 0 10% 0;
+}
+
+.work-section ul li {
+    text-transform: uppercase;
+    margin-right: 15%;
+    line-height: 2rem;
+    float: right;
+}
+
+.work-section ul {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
